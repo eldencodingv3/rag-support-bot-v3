@@ -49,8 +49,8 @@ def init_rag() -> None:
     elif groq_key:
         _mode = "groq"
     else:
-        print("WARNING: No OPENAI_API_KEY or GROQ_API_KEY set – RAG disabled")
-        return
+        _mode = "local"
+        print("INFO: No OPENAI_API_KEY or GROQ_API_KEY set – using local fallback mode")
 
     # Load FAQ data
     faq_path = Path(__file__).parent / "data" / "faq.json"
@@ -90,7 +90,7 @@ def init_rag() -> None:
             metadatas=metadatas,
         )
     else:
-        # Groq mode: use ChromaDB's default embedding function
+        # Groq or local mode: use ChromaDB's default embedding function
         _collection = _client.create_collection(
             name="faq",
             metadata={"hnsw:space": "cosine"},
@@ -108,6 +108,8 @@ def init_rag() -> None:
             documents=documents,
             metadatas=metadatas,
         )
+        if _mode == "local":
+            print(f"INFO: Local mode - loaded {len(_faq_data)} FAQ entries with default embeddings")
 
 
 def query(question: str) -> dict:
@@ -131,6 +133,21 @@ def query(question: str) -> dict:
     # Build context from results
     documents = results["documents"][0] if results["documents"] else []
     metadatas = results["metadatas"][0] if results["metadatas"] else []
+
+    # Local mode: return FAQ answer directly without LLM
+    if _mode == "local":
+        if documents:
+            top_doc = documents[0]
+            answer_part = top_doc.split("\nA: ", 1)[-1] if "\nA: " in top_doc else top_doc
+            answer = f"{answer_part}\n\n(Using local keyword matching - for better results, configure an API key)"
+        else:
+            answer = "I couldn't find a relevant answer. Please try rephrasing your question."
+
+        sources = [
+            {"question": meta["question"], "category": meta["category"]}
+            for meta in metadatas
+        ]
+        return {"answer": answer, "sources": sources}
 
     context = "\n\n".join(documents)
 
