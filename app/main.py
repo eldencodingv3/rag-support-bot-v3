@@ -50,7 +50,10 @@ async def health():
 
 @app.post("/api/chat", response_model=ChatResponse)
 async def chat(request: ChatRequest):
-    result = query(request.question)
+    try:
+        result = query(request.question)
+    except RuntimeError:
+        return {"answer": "RAG pipeline not configured. Please set OPENAI_API_KEY or GROQ_API_KEY environment variable.", "sources": []}
     return result
 
 

@@ -49,9 +49,8 @@ def init_rag() -> None:
     elif groq_key:
         _mode = "groq"
     else:
-        raise RuntimeError(
-            "Either OPENAI_API_KEY or GROQ_API_KEY must be set"
-        )
+        print("WARNING: No OPENAI_API_KEY or GROQ_API_KEY set – RAG disabled")
+        return
 
     # Load FAQ data
     faq_path = Path(__file__).parent / "data" / "faq.json"
