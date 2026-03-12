@@ -1,0 +1,146 @@
+[
+  {
+    "id": "1",
+    "question": "How do I reset my password?",
+    "answer": "To reset your password, go to Settings > Account > Reset Password. Enter your email address and click 'Send Reset Link'. You'll receive an email within 5 minutes with a link to create a new password. The link expires after 24 hours.",
+    "category": "account"
+  },
+  {
+    "id": "2",
+    "question": "How do I update my email address?",
+    "answer": "Navigate to Settings > Account > Personal Information. Click the edit icon next to your email, enter your new email address, and click Save. You'll need to verify your new email before the change takes effect.",
+    "category": "account"
+  },
+  {
+    "id": "3",
+    "question": "How do I delete my account?",
+    "answer": "To delete your account, go to Settings > Account > Delete Account. You'll be asked to confirm your decision. Please note that account deletion is permanent and all your data, order history, and saved preferences will be removed within 30 days.",
+    "category": "account"
+  },
+  {
+    "id": "4",
+    "question": "How do I enable two-factor authentication?",
+    "answer": "Go to Settings > Security > Two-Factor Authentication. Click 'Enable 2FA' and choose either SMS verification or an authenticator app. Follow the on-screen instructions to complete setup. We recommend using an authenticator app for better security.",
+    "category": "account"
+  },
+  {
+    "id": "5",
+    "question": "What payment methods do you accept?",
+    "answer": "We accept Visa, Mastercard, American Express, Discover, PayPal, Apple Pay, and Google Pay. For business accounts, we also offer invoicing with NET-30 payment terms. All transactions are encrypted with 256-bit SSL.",
+    "category": "billing"
+  },
+  {
+    "id": "6",
+    "question": "How do I update my billing information?",
+    "answer": "Go to Settings > Billing > Payment Methods. You can add a new payment method, edit existing ones, or set a default payment method. Changes take effect immediately for future charges.",
+    "category": "billing"
+  },
+  {
+    "id": "7",
+    "question": "Can I get a refund?",
+    "answer": "Yes, we offer full refunds within 30 days of purchase for most products. Digital products can be refunded within 14 days if unused. To request a refund, go to Orders > select the order > Request Refund. Refunds are processed within 5-10 business days.",
+    "category": "billing"
+  },
+  {
+    "id": "8",
+    "question": "Where can I find my invoice?",
+    "answer": "All invoices are available under Settings > Billing > Invoice History. You can download invoices as PDF files or have them emailed to you. For business accounts, invoices are also sent automatically to your billing email on file.",
+    "category": "billing"
+  },
+  {
+    "id": "9",
+    "question": "How long does shipping take?",
+    "answer": "Standard shipping takes 5-7 business days. Express shipping takes 2-3 business days. Overnight shipping is available for orders placed before 2 PM EST. International shipping takes 10-15 business days depending on the destination country.",
+    "category": "shipping"
+  },
+  {
+    "id": "10",
+    "question": "How do I track my order?",
+    "answer": "Go to Orders > select your order to view tracking information. You'll also receive a tracking email once your order ships. You can track packages on our website or directly on the carrier's website using the provided tracking number.",
+    "category": "shipping"
+  },
+  {
+    "id": "11",
+    "question": "Do you ship internationally?",
+    "answer": "Yes, we ship to over 50 countries worldwide. International shipping rates and delivery times vary by destination. Import duties and taxes may apply and are the responsibility of the recipient. Check our shipping page for a full list of supported countries.",
+    "category": "shipping"
+  },
+  {
+    "id": "12",
+    "question": "What is your return policy?",
+    "answer": "We accept returns within 30 days of delivery for items in original condition with tags attached. To start a return, go to Orders > select the order > Request Return. You'll receive a prepaid shipping label via email. Refunds are processed within 5-10 business days after we receive the item.",
+    "category": "returns"
+  },
+  {
+    "id": "13",
+    "question": "How do I exchange an item?",
+    "answer": "To exchange an item, initiate a return through Orders > select the order > Request Return, and select 'Exchange' as the reason. Choose the replacement item and size/color. The exchange will ship once we receive your original item.",
+    "category": "returns"
+  },
+  {
+    "id": "14",
+    "question": "Can I return a sale item?",
+    "answer": "Sale items can be returned within 14 days of delivery for store credit only. Final sale items marked as 'non-returnable' cannot be returned or exchanged. Please check the product page for return eligibility before purchasing.",
+    "category": "returns"
+  },
+  {
+    "id": "15",
+    "question": "What are the product dimensions?",
+    "answer": "Product dimensions are listed on each product page under the 'Specifications' tab. For clothing, refer to our size guide which includes detailed measurements. If you need additional measurements, contact our support team and we'll be happy to help.",
+    "category": "product"
+  },
+  {
+    "id": "16",
+    "question": "Are your products covered by warranty?",
+    "answer": "Yes, all products come with a 1-year manufacturer warranty covering defects in materials and workmanship. Electronics have a 2-year warranty. To make a warranty claim, contact support with your order number and a description of the issue.",
+    "category": "product"
+  },
+  {
+    "id": "17",
+    "question": "How do I leave a product review?",
+    "answer": "Navigate to the product page and scroll down to the Reviews section. Click 'Write a Review', rate the product from 1-5 stars, and share your experience. You must have purchased the product to leave a verified review.",
+    "category": "product"
+  },
+  {
+    "id": "18",
+    "question": "The app is not loading. What should I do?",
+    "answer": "Try these steps: 1) Clear your browser cache and cookies. 2) Try a different browser or incognito mode. 3) Check your internet connection. 4) Disable browser extensions. 5) If the issue persists, contact support at support@example.com with your browser version and a screenshot of the error.",
+    "category": "technical"
+  },
+  {
+    "id": "19",
+    "question": "How do I clear my browser cache?",
+    "answer": "In Chrome: press Ctrl+Shift+Delete (Cmd+Shift+Delete on Mac), select 'All time', check 'Cached images and files', and click 'Clear data'. In Firefox: press Ctrl+Shift+Delete, select 'Everything', check 'Cache', and click 'Clear Now'. In Safari: go to Safari > Preferences > Privacy > Manage Website Data > Remove All.",
+    "category": "technical"
+  },
+  {
+    "id": "20",
+    "question": "What browsers do you support?",
+    "answer": "We support the latest two versions of Chrome, Firefox, Safari, and Microsoft Edge. For the best experience, we recommend using Chrome or Firefox. Internet Explorer is not supported. Our mobile site works on iOS Safari and Android Chrome.",
+    "category": "technical"
+  },
+  {
+    "id": "21",
+    "question": "How do I contact customer support?",
+    "answer": "You can reach us via: 1) Live chat on our website (available 24/7). 2) Email at support@example.com (response within 24 hours). 3) Phone at 1-800-555-0123 (Mon-Fri, 9 AM - 6 PM EST). 4) Social media @examplesupport on Twitter.",
+    "category": "account"
+  },
+  {
+    "id": "22",
+    "question": "My payment was declined. What should I do?",
+    "answer": "If your payment was declined: 1) Verify your card details are correct. 2) Check that your card hasn't expired. 3) Ensure you have sufficient funds. 4) Contact your bank to authorize the transaction. 5) Try a different payment method. If the issue continues, contact our support team.",
+    "category": "billing"
+  },
+  {
+    "id": "23",
+    "question": "Can I change my shipping address after placing an order?",
+    "answer": "You can change your shipping address within 1 hour of placing the order. Go to Orders > select the order > Edit Shipping Address. After 1 hour, or if the order has already been shipped, address changes are not possible. Contact support for assistance with shipped orders.",
+    "category": "shipping"
+  },
+  {
+    "id": "24",
+    "question": "How do I use a promo code?",
+    "answer": "Enter your promo code in the 'Discount Code' field at checkout and click 'Apply'. The discount will be reflected in your order total. Only one promo code can be used per order. Promo codes cannot be combined with other offers unless stated otherwise.",
+    "category": "billing"
+  }
+]
